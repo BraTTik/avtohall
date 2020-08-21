@@ -1,0 +1,21 @@
+@mixin headerDecor($width, $color)
+    width: $width
+    background-color: $color
+    border: 1px solid $color
+    display: flex
+    position: absolute
+    align-self: center
+    &::before
+        content: ""
+        width: $width*3/4
+        border: 1px solid $color
+        background-color: $color
+        position: absolute
+        top: -9px
+    &::after
+        content: ""
+        width: $width*3/4
+        border: 1px solid $color
+        background-color: $color
+        position: absolute
+        top: 8px

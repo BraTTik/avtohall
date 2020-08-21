@@ -1,0 +1,71 @@
+header
+    min-height: 600px
+    background-image: url('../img/bg_header.jpg')
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    position: relative
+    font-family: $primary-font
+    color: #ffffff
+    .topbar
+        padding: 15px 0
+        min-height: 60px
+        background-color: rgba(0,0,0,.6)
+        box-shadow: rgba(255, 255, 255, .4) 0 1px 0
+        font-size: 25px
+        text-transform: uppercase
+        line-height: 25px
+        color: #ffffff
+        .topbar_left
+            display: flex
+            .t_addr
+                strong
+                    font-size: 1.4em
+                    font-family: $primary-font_bold
+        .fas
+            color: #D12F22
+            font-size: 1.4em
+            margin-right: 10px
+        strong
+            color: #d12f22
+        a
+            color: #ffffff
+            text-decoration: none
+            transition: all .25 ease
+            border-bottom: 2px solid #fff
+            &:hover
+                border-bottom: transparent
+        .logo_wrap
+            position: absolute
+            margin: 0 auto
+            margin-top: -5px
+            width: 100%
+            img
+                width: 100%
+        .topbar_right
+            text-align: right
+            .t_num
+                font-size: 1.2em
+    .header_slogan
+        text-align: center
+        margin-top: 70px
+        letter-spacing: 2px
+        color: #ffffff
+        text-shadow: rgba(0,0,0, .7) 1px 2px 0
+    .h_button 
+        margin-right: 10px
+        a
+            line-height: 18px
+            padding-left: 60px
+            background-image: url(../img/camera.png)
+            background-repeat: no-repeat
+            background-position: 7px center
+    .button_wrap
+        display: flex
+        align-items: center
+        align-content: center
+        position: absolute
+        bottom: 30px
+        left: 10%
+        flex-wrap: wrap
+

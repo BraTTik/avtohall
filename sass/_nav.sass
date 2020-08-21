@@ -1,0 +1,79 @@
+@mixin navItem($x, $y)
+    background-image: url('../img/menu-icon-set.png')
+    background-repeat: no-repeat
+    background-position: $x $y
+    padding: 20px 20px 20px 50px
+    border-left: 1px solid rgba(255,255,255,.3)
+    line-height: 18px
+
+
+nav
+    background-color: #242424
+    color: #ffffff
+    .menu_wrap
+        width: 100%
+        display: flex
+        justify-content: space-between
+        ul
+            padding: 0
+            margin: 0
+            list-style-type: none
+            display: flex
+            .nav-item
+                &:nth-child(1)
+                    @include navItem(-7px, 0)
+                &:nth-child(2)
+                    @include navItem(-151px, 0)
+                &:nth-child(3)
+                    @include navItem(-269px, 0)
+                &:nth-child(4)
+                    @include navItem(-394px, 0)
+                &:nth-child(5)
+                    @include navItem(-585px, 0)
+                &:nth-child(6)
+                    @include navItem(-745px, 0)
+                &:first-child
+                    border-left: none
+
+            a
+                font-family: $primary-font
+                color: #ffffff
+                display: block
+                &:hover,
+                &:active
+                    background-color: #050505
+                    text-decoration: none
+        .warranty
+            display: flex
+            padding: 5px 0
+            align-self: flex-start
+            font-family: 'RobotoCondensedRegular'
+            .war_wrap
+                width: 158px
+                display: flex
+                align-items: flex-start
+                border: 3px solid #fff
+                padding: 5px
+                border-radius: 3px
+                .war_left
+                    align-self: flex-end
+                    margin-right: 5px
+                    strong
+                        font-family: 'RobotoCondensedBold'
+                        font-size: 20px
+                        span
+                            font-size: 25px
+                .war_right
+                    line-height: 20px  
+
+@media screen and (max-width: 880px)
+    nav
+        .menu_wrap
+            justify-content: space-between
+            ul
+                flex-direction: column
+                .nav-item
+                    border-bottom: 1px solid rgba(255,255,255,.3)
+                    border-left: none !important
+                    &:last-child
+                        border-bottom: none

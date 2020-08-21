@@ -1,0 +1,152 @@
+#mind-cards
+    background-color: #191919
+    padding: 30px 0
+    color: #ffffff
+    font-family: $header-font
+    h2
+        color: #C9C9C9
+        display: inline-block
+        font-size: 35px
+        text-align: center
+        text-transform: uppercase
+        position: relative
+        strong
+            color: #ffffff
+            span
+                color: $highlight-color
+        .header_decor__left
+            @include headerDecor(45px, #fff)
+            left: 103%
+            top: 50%
+            &::before,
+            &::after
+                left: 0
+        .header_decor__right
+            @include headerDecor(45px,#fff)
+            right: 103%
+            top: 50%
+            &::before,
+            &::after
+                right: 0
+
+    .mc_wrap
+        position: relative
+        width: 100%
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        margin-top: 100px
+        margin-bottom: 100px
+        .mc-item
+            position: relative
+            min-width: 160px
+            min-height: 160px
+            padding: 3px
+            display: flex
+            justify-content: flex-end
+            border: 1px solid #2E2E2E
+            margin-right: 10px
+            margin-bottom: 10px
+            &:nth-child(1) a
+                background-repeat: no-repeat
+                background-image: url("../img/cm-icon-set.png")
+                background-position: 20px 10px
+            &:nth-child(2) a
+                background-repeat: no-repeat
+                background-image: url("../img/cm-icon-set.png")
+                background-position: -111px 10px
+            &:nth-child(3) a
+                background-repeat: no-repeat
+                background-image: url("../img/cm-icon-set.png")
+                background-position: -245px 10px
+            &:nth-child(4) a
+                background-repeat: no-repeat
+                background-image: url("../img/cm-icon-set.png")
+                background-position: -380px 10px
+            &:nth-child(5) a
+                background-repeat: no-repeat
+                background-image: url("../img/cm-icon-set.png")
+                background-position: -510px 10px
+            &:nth-child(6) a
+                background-repeat: no-repeat
+                background-image: url("../img/cm-icon-set.png")
+                background-position: -645px 10px
+            .m_card
+                display: block
+                width: 100%
+                height: 100%
+                padding-top: 100px
+                text-align: center
+                font-family: $primary-font
+                font-size: 20px
+                color: #ffffff
+                text-decoration: none
+                &:hover
+                    text-decoration: none
+                    background-color: #2A2A2A
+            .mc-toggle
+                height: 20px
+                background-color: rgba(255,255,255,.1)
+                position: absolute
+                bottom: 3px
+                left: 3px
+                right: 3px
+                &::after
+                    content: ""
+                    position: absolute
+                    width: 10px
+                    height: 10px
+                    border-left: 1px solid $highlight-color
+                    border-top: 1px solid $highlight-color
+                    left: 50%
+                    top: 50%
+                    transform: translate(-50%, -75%) rotate(225deg)
+                &::before
+                    content: ''
+                    position: absolute
+                    width: 20px
+                    height: 20px
+                    background-color: #353535
+                    left: 50%
+                    transform: translateX(-50%) rotate(45deg)
+                    top: 32px
+                    transition: all .35s ease
+                    opacity: 0
+            .mc-toggle.active::after
+                border-left: 1px solid #ffffff
+                border-top: 1px solid #ffffff
+            .mc-toggle.active::before
+                opacity: 1
+    .mc_service-list
+        position: absolute
+        width: 100%
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+        background-color: #353535
+        list-style-type: none
+        padding: 0
+        margin: 0
+        a
+            display: block
+            padding: 7px
+            font-family: $primary-font
+            font-size: 18px
+            color: #ffffff
+            text-decoration: underline
+            &:hover
+                text-decoration: none
+
+    .button
+        margin: auto
+        width: 170px
+        text-align: center
+
+
+    
+
+                
+
+                
+
+            

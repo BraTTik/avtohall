@@ -1,0 +1,51 @@
+#work-cards
+    padding: 50px 0
+    padding-bottom: 0
+    background-color: #E9E9E9
+    font-family: "RobotoCondensedBold"
+    text-align: center
+    p
+        display: inline-block
+        width: 70%
+    h2
+        color: #000000
+        display: inline-block
+        font-size: 35px
+        text-align: center
+        text-transform: uppercase
+        position: relative
+        .header_decor__left
+            @include headerDecor(45px, #000)
+            left: 103%
+            top: 50%
+            &::before,
+            &::after
+                left: 0
+        .header_decor__right
+            @include headerDecor(45px, #000)
+            right: 103%
+            top: 50%
+            &::before,
+            &::after
+                right: 0
+    .cards-block
+        background-color: #D6D6D6
+        padding: 30px 0
+        .w-cards_wrap
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+            .w-card
+                width: 32%
+                .img_wrap
+                    width: 100%
+                    height: 230px
+                    display: flex
+                    border-top: 3px solid $highlight-color
+                    img
+                        max-width: 100%
+                        object-fit: cover
+                p
+                    width: 100%
+                    padding: 20px 0
+                            
